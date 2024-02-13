@@ -15,9 +15,9 @@ jobs:
       with:
         switches: -avzr --exclude=".git"
         path: /
-        remote_path: /home/u496810940/domains/bandungarabiccenter.com/bac/public/test
+        remote_path: /home/badanwa1/test
         remote_host: ${{ secrets.DEPLOY_HOST }}
-        remote_port: 65002
+        remote_port: 64000
         remote_user: ${{ secrets.DEPLOY_USER }}
         remote_key: ${{ secrets.DEPLOY_KEY }}
         
