@@ -18,5 +18,6 @@ jobs:
         remote_path: /home/badanwa1/test
         remote_host: ${{ secrets.DEPLOY_HOST }}
         remote_user: ${{ secrets.DEPLOY_USER }}
+        remote_port: 64000
         remote_key: ${{ secrets.DEPLOY_KEY }}
         
