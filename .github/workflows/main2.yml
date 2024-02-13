@@ -7,17 +7,12 @@ jobs:
     name: Auto - Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2.3.2
-    
-    - name: 📂 Sync files
-      uses: Burnett01/rsync-deployments@6.0.0
+    - name: Deploy to Server
+      uses: appleboy/ssh-action@master
       with:
-        switches: -avzr --exclude=".git"
-        path: /
-        remote_path: /home/badanwa1/test
-        remote_host: ${{ secrets.DEPLOY_HOST }}
-        remote_user: ${{ secrets.DEPLOY_USER }}
-        remote_port: 64000
-        remote_key: ${{ secrets.DEPLOY_KEY }}
+        host: ${{ secrets.DEPLOY_HOST }}
+        username: ${{ secrets.DEPLOY_USER}}
+        key: ${{ secrets.DEPLOY_KEY }}
+        port: 64000
+        script: whoami
         
