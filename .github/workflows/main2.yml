@@ -16,5 +16,6 @@ jobs:
         passphrase: ${{ secrets.DEPLOY_PASSPHRASE }}
         port: 64000
         script: |
-          pwd
+          cd test
+          git pull 
         
