@@ -17,6 +17,7 @@ jobs:
         path: /
         remote_path: /home/u496810940/domains/bandungarabiccenter.com/bac/public/test
         remote_host: ${{ secrets.DEPLOY_HOST }}
+        remote_port: 65002
         remote_user: ${{ secrets.DEPLOY_USER }}
         remote_key: ${{ secrets.DEPLOY_KEY }}
         
