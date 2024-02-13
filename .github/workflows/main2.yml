@@ -15,5 +15,6 @@ jobs:
         key: ${{ secrets.DEPLOY_KEY }}
         passphrase: ${{ secrets.DEPLOY_PASSPHRASE }}
         port: 64000
-        script: whoami
+        script: |
+          pwd
         
